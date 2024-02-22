@@ -6,6 +6,14 @@ A work day planner for the busy business professional.
 
 Work Day Scheduler is an app designed for users to log and track tasks to be completed during a normal 9-5 business day.
 
+## Installation
+
+To use this app, the user must click on the link found at the bottom of this README file which will navigate to the live site.
+
+## Usage
+
+This webpage is designed to be used to lift the burden of tracking everyday work tasks.
+
 ## User Story
 
 AS AN employee with a busy schedule
@@ -31,5 +39,9 @@ THEN the saved events persist
 ## Lisence
 
 MIT
+
+## Credits
+
+Starter code was provided from https://github.com/coding-boot-camp/crispy-octo-meme
 
 ## Link to Live Site
