@@ -1,3 +1,4 @@
+$(document).ready(function () {
 var timeBlockEl = document.querySelector('.container');
 var now = moment();
 
@@ -41,9 +42,13 @@ changeColor();
   $('#hour-16 .description').val(localStorage.getItem('hour16'));
   $('#hour-17 .description').val(localStorage.getItem('hour17'));
 
-  var userNotes = localStorage.getItem(timeBlock.id);
+  $('.time-block').each(function() {
+    var hourID = $(this).attr('id');
+    var userNotes = localStorage.getItem(hourID)
     if (userNotes !== null) {
-      timeBlock.querySelector('textarea').value = userNotes;
+      $(this).find('.description').val(userNotes)
     }
+  })
 
 $('#currentDay').text(now.format('LLLL'));
+  })
